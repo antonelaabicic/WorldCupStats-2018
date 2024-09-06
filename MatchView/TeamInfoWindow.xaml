@@ -1,0 +1,140 @@
+﻿<Window x:Class="MatchView.TeamInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MatchView"
+        mc:Ignorable="d"
+        Title="Team Info" Height="400" Width="400"
+        Icon="Resources\football_team.png"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.RenderTransform>
+        <ScaleTransform x:Name="WindowScaleTransform" ScaleX="1.0" ScaleY="1.0" />
+    </Window.RenderTransform>
+    <Grid Background="#708090">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.5*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Label x:Name="lbCountry"
+               Grid.Row="0" Grid.Column="0"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="18"
+               HorizontalAlignment="Left"
+               Margin="15,0,0,0"/>
+        <Label x:Name="lbCountryValue"
+               Grid.Row="0" Grid.Column="1"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="20"
+               FontWeight="Normal"/>
+
+        <Label x:Name="lbFifaCode"
+               Grid.Row="1" Grid.Column="0"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="18"
+               HorizontalAlignment="Left"
+               Margin="15,0,0,0"/>
+        <Label x:Name="lbFifaCodeValue"
+               Grid.Row="1" Grid.Column="1"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="20"
+               FontWeight="Normal"/>
+
+        <Label x:Name="lbGamesPlayed"
+               Grid.Row="2" Grid.Column="0"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="18"
+               HorizontalAlignment="Left"
+               Margin="15,0,0,0"/>
+        <Label x:Name="lbGamesPlayedValue"
+               Grid.Row="2" Grid.Column="2"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="20"
+               FontWeight="Normal"/>
+
+        <Label x:Name="lbGamesWon"
+               Grid.Row="3" Grid.Column="0"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="18"
+               HorizontalAlignment="Left"
+               Margin="15,0,0,0"/>
+        <Label x:Name="lbGamesWonValue"
+               Grid.Row="3" Grid.Column="2"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="20"
+               FontWeight="Normal"/>
+
+        <Label x:Name="lbGamesLost"
+               Grid.Row="4" Grid.Column="0"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="18"
+               HorizontalAlignment="Left"
+               Margin="15,0,0,0"/>
+        <Label x:Name="lbGamesLostValue"
+               Grid.Row="4" Grid.Column="3"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="20"
+               FontWeight="Normal"/>
+
+        <Label x:Name="lbGamesDrawn"
+               Grid.Row="5" Grid.Column="0"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="18"
+               HorizontalAlignment="Left"
+               Margin="15,0,0,0"/>
+        <Label x:Name="lbGamesDrawnValue"
+               Grid.Row="5" Grid.Column="3"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="20"
+               FontWeight="Normal"/>
+
+        <Label x:Name="lbGoalsScored"
+               Grid.Row="6" Grid.Column="0"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="18"
+               HorizontalAlignment="Left"
+               Margin="15,0,0,0"/>
+        <Label x:Name="lbGoalsScoredValue"
+               Grid.Row="6" Grid.Column="3"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="20"
+               FontWeight="Normal"/>
+
+        <Label x:Name="lbGoalsConceded"
+               Grid.Row="7" Grid.Column="0"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="18"
+               HorizontalAlignment="Left"
+               Margin="15,0,0,0"/>
+        <Label x:Name="lbGoalsConcededValue"
+               Grid.Row="7" Grid.Column="4"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="20"
+               FontWeight="Normal"/>   
+
+        <Label x:Name="lbGoalDifference"
+               Grid.Row="8" Grid.Column="0"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="18"
+               HorizontalAlignment="Left"
+               Margin="15,0,0,0"/>
+        <Label x:Name="lbGoalDifferenceValue"
+               Grid.Row="8" Grid.Column="4"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="20"
+               FontWeight="Normal"/>
+    </Grid>
+</Window>

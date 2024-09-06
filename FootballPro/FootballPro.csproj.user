@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UCs\FavouritePlayersUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCs\FavouriteTeamUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCs\GoalCardUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCs\PlayerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCs\RankingListUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCs\SettingsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCs\SplashScreenUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCs\VisitorsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="UCs\PlayerUC.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

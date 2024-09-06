@@ -1,0 +1,32 @@
+﻿<Window x:Class="MatchView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MatchView"
+        mc:Ignorable="d"
+        Title="MatchView" Height="800" Width="1500"
+        WindowStartupLocation="CenterScreen" 
+        Icon="Resources/ball2.png"
+        Closing="OnWindowClosing">
+    <DockPanel>
+ 
+        <!-- header -->
+        <DockPanel DockPanel.Dock="Top"  
+               Background="#008080" 
+               Height="55">
+
+            <Button HorizontalAlignment="Right"  
+                Background="#D3D3D3" 
+                Click="OnSettingsBtnClick">
+                <Button.Content>
+                    <Image Source="Resources\settings2.png" Width="75" />
+                </Button.Content>
+            </Button>
+        </DockPanel>
+
+        <!-- main content -->
+        <ContentControl x:Name="MainContent"></ContentControl>
+        
+    </DockPanel>
+</Window>

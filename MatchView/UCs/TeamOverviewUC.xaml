@@ -1,0 +1,97 @@
+﻿<UserControl x:Class="MatchView.UCs.TeamOverviewUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MatchView.UCs"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1500">
+    <Grid Style="{StaticResource BackgroundStyle}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="9*" />
+            <RowDefinition Height="*" />
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="lbFavTeam" 
+               Grid.Row="0" Grid.Column="1"
+               Style="{StaticResource DropShadowLabelStyle}"/>
+        <Label x:Name="lbOpponentTeam" 
+               Grid.Row="0" Grid.Column="3"
+               Style="{StaticResource DropShadowLabelStyle}"/>
+        <Label x:Name="lbScore"
+               Content=" 1 : 1"
+               Grid.Row="1" Grid.Column="2" 
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="34"
+               FontWeight="ExtraBold"/>
+
+        <Button Grid.Row="1" Grid.Column="0" 
+                Margin="0,0,10,0" 
+                HorizontalAlignment="Right" 
+                VerticalAlignment="Center" 
+                Background="Transparent" 
+                BorderBrush="Transparent" 
+                Click="ShowFavTeamInfo_Click">
+            <Image Source="/Resources/football_team.png" Width="50" Height="50" />
+        </Button>
+
+        <Button Grid.Row="1" Grid.Column="4" 
+                Margin="10,0,0,0" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Center" 
+                Background="Transparent" 
+                BorderBrush="Transparent" 
+                Click="ShowOppTeamInfo_Click">
+            <Image Source="/Resources/football_team.png" Width="50" Height="50" />
+        </Button>
+
+        <ComboBox x:Name="comboBoxFavTeam"
+                  Grid.Row="1" Grid.Column="1" 
+                  FontSize ="18"
+                  Height="35"
+                  SelectionChanged="ComboBoxFavTeam_SelectionChanged"/>
+
+        <ComboBox x:Name="comboBoxOppTeam"
+                  Grid.Row="1" Grid.Column="3" 
+                  FontSize ="18"
+                  Height="35"
+                  SelectionChanged="ComboBoxOppTeam_SelectionChanged"/>
+
+        <ScrollViewer 
+            Grid.Row="2" Grid.Column="1" 
+            VerticalScrollBarVisibility="Auto" >
+            <ListBox                
+                 x:Name="lsFavTeam" 
+                 Style="{StaticResource CustomListBoxStyle}"/>
+        </ScrollViewer>
+        <ScrollViewer 
+            Grid.Row="2" Grid.Column="3" 
+            VerticalScrollBarVisibility="Auto" >
+            <ListBox
+                x:Name="lsOppTeam" 
+                Style="{StaticResource CustomListBoxStyle}"/>
+        </ScrollViewer>
+
+        <Button Grid.Row="4" Grid.Column="4" 
+                Margin="0,0,10,0" 
+                HorizontalAlignment="Right" 
+                VerticalAlignment="Center" 
+                Background="Transparent" 
+                BorderBrush="Transparent" 
+                Click="OnNextButtonClick">
+            <Image Source="/Resources/right-arrow.png" Width="50" Height="50" />
+        </Button>
+
+    </Grid>
+</UserControl>

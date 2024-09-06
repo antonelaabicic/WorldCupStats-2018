@@ -1,0 +1,83 @@
+﻿<Window x:Class="MatchView.PlayerDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MatchView"
+        mc:Ignorable="d"
+        Title="Player data" Height="150" Width="600" 
+        Icon="Resources\football_player.png"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Background="#708090">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.8*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image x:Name="playerImg"
+               Grid.Row="0" Grid.Column="0"
+               Height="70" Width="80"/>
+        <Label x:Name="lbName"
+               Grid.Row="1" Grid.Column="0"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="15">
+        </Label>
+
+        <Image 
+            Height="40" Width="40"
+            Grid.Row="0" Grid.Column="1"
+            Source="/Resources/captain.png"/>
+        <Image x:Name="lbIsCaptain"
+            Grid.Row="1" Grid.Column="1"
+            Height="35" Width="35"
+            Source="/Resources/delete.png"/>
+
+        <Image 
+            Grid.Row="0" Grid.Column="2"
+            Height="40" Width="40"
+            Source="/Resources/football_shirt.png"/>
+        <Label x:Name="lbShirtNo" 
+               Grid.Row="1" Grid.Column="2"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="18"/>
+
+        <Image 
+            Grid.Row="0" Grid.Column="3"
+            Height="40" Width="40"
+            Source="/Resources/football_player.png"/>
+        <Label x:Name="lbPosition" 
+               Grid.Row="1" Grid.Column="3"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="18"/>
+
+        <Image 
+            Grid.Row="0" Grid.Column="4"
+            Height="40" Width="40"
+            Source="/Resources/goal.png"/>
+        <Label x:Name="lbGoals" 
+               Grid.Row="1" Grid.Column="4"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="18"/>
+
+        <Image 
+            Grid.Row="0" Grid.Column="5"
+            Height="40" Width="40"
+            Source="/Resources/yellow_card.png"/>
+        <Label x:Name="lbYellowCards" 
+               Grid.Row="1" Grid.Column="5"
+               Style="{StaticResource DropShadowLabelStyle}"
+               FontSize="18"/>
+        
+    </Grid>
+</Window>

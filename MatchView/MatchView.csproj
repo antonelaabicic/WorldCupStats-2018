@@ -1,0 +1,207 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\ARG_flag.png" />
+    <None Remove="Resources\AUS_flag.png" />
+    <None Remove="Resources\ball.png" />
+    <None Remove="Resources\ball2.png" />
+    <None Remove="Resources\BEL_flag.png" />
+    <None Remove="Resources\BRA_flag.png" />
+    <None Remove="Resources\CAN_flag.png" />
+    <None Remove="Resources\captain.png" />
+    <None Remove="Resources\checked.png" />
+    <None Remove="Resources\CHI_flag.png" />
+    <None Remove="Resources\CHN_flag.png" />
+    <None Remove="Resources\CMR_flag.png" />
+    <None Remove="Resources\COL_flag.png" />
+    <None Remove="Resources\CRC_flag.png" />
+    <None Remove="Resources\CRO_flag.png" />
+    <None Remove="Resources\delete.png" />
+    <None Remove="Resources\DEN_flag.png" />
+    <None Remove="Resources\EGY_flag.png" />
+    <None Remove="Resources\ENG_flag.png" />
+    <None Remove="Resources\ESP_flag.png" />
+    <None Remove="Resources\female_player.png" />
+    <None Remove="Resources\football_player.png" />
+    <None Remove="Resources\football_shirt.png" />
+    <None Remove="Resources\football_team.png" />
+    <None Remove="Resources\football_wallpaper.jpg" />
+    <None Remove="Resources\FRA_flag.png" />
+    <None Remove="Resources\genderneutral_icon.png" />
+    <None Remove="Resources\GER_flag.png" />
+    <None Remove="Resources\goal.png" />
+    <None Remove="Resources\grass.jpg" />
+    <None Remove="Resources\IRN_flag.png" />
+    <None Remove="Resources\ISL_flag.png" />
+    <None Remove="Resources\ITA_flag.png" />
+    <None Remove="Resources\JAM_flag.png" />
+    <None Remove="Resources\JPN_flag.png" />
+    <None Remove="Resources\KOR_flag.png" />
+    <None Remove="Resources\KSA_flag.png" />
+    <None Remove="Resources\left-arrow.png" />
+    <None Remove="Resources\loader.gif" />
+    <None Remove="Resources\loader2.gif" />
+    <None Remove="Resources\male_player.png" />
+    <None Remove="Resources\MAR_flag.png" />
+    <None Remove="Resources\MEX_flag.png" />
+    <None Remove="Resources\NED_flag.png" />
+    <None Remove="Resources\NGA_flag.png" />
+    <None Remove="Resources\NOR_flag.png" />
+    <None Remove="Resources\NZL_flag.png" />
+    <None Remove="Resources\PAN_flag.png" />
+    <None Remove="Resources\PER_flag.png" />
+    <None Remove="Resources\pitch.jpg" />
+    <None Remove="Resources\player_ss.png" />
+    <None Remove="Resources\POL_flag.png" />
+    <None Remove="Resources\POR_flag.png" />
+    <None Remove="Resources\right-arrow.png" />
+    <None Remove="Resources\RSA_flag.png" />
+    <None Remove="Resources\RUS_flag.png" />
+    <None Remove="Resources\SCO_flag.png" />
+    <None Remove="Resources\SEN_flag.png" />
+    <None Remove="Resources\settings.png" />
+    <None Remove="Resources\settings2.png" />
+    <None Remove="Resources\SRB_flag.png" />
+    <None Remove="Resources\SUI_flag.png" />
+    <None Remove="Resources\SWE_flag.png" />
+    <None Remove="Resources\THA_flag.png" />
+    <None Remove="Resources\tick.png" />
+    <None Remove="Resources\TUN_flag.png" />
+    <None Remove="Resources\URU_flag.png" />
+    <None Remove="Resources\USA_flag.png" />
+    <None Remove="Resources\yellow_card.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\ARG_flag.png" />
+    <Resource Include="Resources\AUS_flag.png" />
+    <Resource Include="Resources\ball.png" />
+    <Resource Include="Resources\ball2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\BEL_flag.png" />
+    <Resource Include="Resources\BRA_flag.png" />
+    <Resource Include="Resources\CAN_flag.png" />
+    <Resource Include="Resources\captain.png" />
+    <Resource Include="Resources\checked.png" />
+    <Resource Include="Resources\CHI_flag.png" />
+    <Resource Include="Resources\CHN_flag.png" />
+    <Resource Include="Resources\CMR_flag.png" />
+    <Resource Include="Resources\COL_flag.png" />
+    <Resource Include="Resources\CRC_flag.png" />
+    <Resource Include="Resources\CRO_flag.png" />
+    <Resource Include="Resources\delete.png" />
+    <Resource Include="Resources\DEN_flag.png" />
+    <Resource Include="Resources\EGY_flag.png" />
+    <Resource Include="Resources\ENG_flag.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\ESP_flag.png" />
+    <Resource Include="Resources\female_player.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\genderneutral_icon.png" />
+    <Resource Include="Resources\ITA_flag.png" />
+    <Resource Include="Resources\JAM_flag.png" />
+    <Resource Include="Resources\left-arrow.png" />
+    <Resource Include="Resources\male_player.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\NED_flag.png" />
+    <Resource Include="Resources\NOR_flag.png" />
+    <Resource Include="Resources\NZL_flag.png" />
+    <Resource Include="Resources\pitch.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\football_player.png" />
+    <Resource Include="Resources\football_shirt.png" />
+    <Resource Include="Resources\football_team.png" />
+    <Resource Include="Resources\football_wallpaper.jpg" />
+    <Resource Include="Resources\FRA_flag.png" />
+    <Resource Include="Resources\GER_flag.png" />
+    <Resource Include="Resources\goal.png" />
+    <Resource Include="Resources\IRN_flag.png" />
+    <Resource Include="Resources\ISL_flag.png" />
+    <Resource Include="Resources\JPN_flag.png" />
+    <Resource Include="Resources\KOR_flag.png" />
+    <Resource Include="Resources\KSA_flag.png" />
+    <Resource Include="Resources\loader.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\loader2.gif" />
+    <Resource Include="Resources\MAR_flag.png" />
+    <Resource Include="Resources\MEX_flag.png" />
+    <Resource Include="Resources\NGA_flag.png" />
+    <Resource Include="Resources\PAN_flag.png" />
+    <Resource Include="Resources\PER_flag.png" />
+    <Resource Include="Resources\player_ss.png" />
+    <Resource Include="Resources\POL_flag.png" />
+    <Resource Include="Resources\POR_flag.png" />
+    <Resource Include="Resources\right-arrow.png" />
+    <Resource Include="Resources\RSA_flag.png" />
+    <Resource Include="Resources\RUS_flag.png" />
+    <Resource Include="Resources\SCO_flag.png" />
+    <Resource Include="Resources\SEN_flag.png" />
+    <Resource Include="Resources\settings.png" />
+    <Resource Include="Resources\settings2.png" />
+    <Resource Include="Resources\SRB_flag.png" />
+    <Resource Include="Resources\SUI_flag.png" />
+    <Resource Include="Resources\SWE_flag.png" />
+    <Resource Include="Resources\THA_flag.png" />
+    <Resource Include="Resources\tick.png" />
+    <Resource Include="Resources\TUN_flag.png" />
+    <Resource Include="Resources\URU_flag.png" />
+    <Resource Include="Resources\USA_flag.png" />
+    <Resource Include="Resources\yellow_card.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\grass.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resource_hr-HR.Designer.cs">
+      <DependentUpon>Resource_hr-HR.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Properties\Resource_en-US.Designer.cs">
+      <DependentUpon>Resource_en-US.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Properties\Resource_de-DE.Designer.cs">
+      <DependentUpon>Resource_de-DE.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resource_hr-HR.resx">
+      <LastGenOutput>Resource_hr-HR.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resource_en-US.resx">
+      <LastGenOutput>Resource_en-US.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resource_de-DE.resx">
+      <LastGenOutput>Resource_de-DE.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
