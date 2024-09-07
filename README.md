@@ -26,7 +26,7 @@ The **WPF application** offers a responsive, modern interface, allowing users to
 
 Both applications rely on the shared Data Layer for data manipulation, enabling a consistent and efficient experience across both platforms.
 
-</br>
+
 
 ## Built With
 
@@ -35,4 +35,4 @@ Both applications rely on the shared Data Layer for data manipulation, enabling 
 ![Windows Forms](https://img.shields.io/badge/Windows%20Forms-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ![WPF](https://img.shields.io/badge/WPF-68217A?style=for-the-badge&logo=windows&logoColor=white)
 
-</br>
+
