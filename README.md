@@ -7,7 +7,7 @@
 
 The project consists of three interconnected applications which display statistics from the 2018 Men's and 2019 Women's World Cup using a specific API: [Football API](https://worldcup-vua.nullbit.hr).
 
-**Data Layer (Class Library)** is responsible for retrieving, parsing, and mapping data from the API, preparing it for use in both client applications.
+**Data Layer** is class library responsible for retrieving, parsing, and mapping data from the API, preparing it for use in both client applications.
 
 **Windows Forms application** provides a user interface where users can select preferences, such as gender of the championship and language, pick a favorite national team and top players, and view rankings of players and matches. The application includes drag-and-drop functionality for managing favorite players and supports printing rankings as PDFs. 
 
