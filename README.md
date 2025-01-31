@@ -3,7 +3,7 @@
 </p>
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## 📌 About The Project
 
 The project consists of three interconnected applications which display statistics from the 2018 Men's and 2019 Women's World Cup using a specific API: [Football API](https://worldcup-vua.nullbit.hr).
 
@@ -15,7 +15,7 @@ The project consists of three interconnected applications which display statisti
 
 Both applications rely on the shared Data Layer for data manipulation, enabling a consistent and efficient experience across both platforms.
 
-## Built With
+## 🛠 Built With
 
 ### Languages & Frameworks
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
